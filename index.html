@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>GeoFS Add-ons</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>GeoFS Addons Warehouse</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0e0e0e;
+            color: #eee;
+        }
+
+        /* ÜST BAR */
+        .topbar {
+            display: flex;
+            align-items: center;
+            height: 56px;
+            background: #151515;
+            border-bottom: 1px solid #222;
+            padding: 0 16px;
+        }
+
+        .topbar img {
+            height: 32px;
+            margin-right: 12px;
+        }
+
+        .topbar .title {
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .topbar .spacer {
+            flex: 1;
+        }
+
+        .topbar a {
+            color: #aaa;
+            text-decoration: none;
+            margin-left: 16px;
+            font-size: 14px;
+        }
+
+        .topbar a:hover {
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- ÜST BAR -->
-  <header class="topbar">
-    <div class="logo">GeoFS Add-ons</div>
-    <nav class="nav">
-      <a href="#">Home</a>
-      <a href="https://github.com/Dta1671/geofs-addons-warehouse" target="_blank">Warehouse</a>
-      <a href="https://github.com/Dta1671/geofs-addons" target="_blank">GitHub</a>
-    </nav>
-  </header>
+    <div class="topbar">
+        <img src="_images_media_logo_icon(1).png" alt="Logo">
+        <div class="title">GeoFS Addons Warehouse</div>
+        <div class="spacer"></div>
+        <a href="#">Home</a>
+        <a href="#">Addons</a>
+        <a href="#">Submit</a>
+        <a href="#">About</a>
+    </div>
 
-  <!-- ANA İÇERİK -->
-  <main class="container">
-    <h1>Add-on Listesi</h1>
-    <ul id="addons-list"></ul>
-  </main>
-
-  <script src="script.js"></script>
 </body>
 </html>
